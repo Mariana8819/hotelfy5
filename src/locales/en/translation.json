@@ -1,0 +1,17 @@
+
+{
+    "welcome": "Welcome",
+    "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "submit": "Login",
+  "home": "Home",
+  "landingPage": "Landing Page",
+  "dashboard": "Dashboard",
+  "register": "Register",
+  "language": "Language",
+  "english": "English",
+  "spanish": "Español",
+  "portuguese": "Português"
+  }
+  
