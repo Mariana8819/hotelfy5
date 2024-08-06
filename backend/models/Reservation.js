@@ -7,14 +7,24 @@ const reservationSchema = new Schema({
         ref: 'User',
         required: true
     },
-    room: {
-        type: String,
+    roomId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Room',
         required: true
     },
-    date:{
+    checkInDate: {
         type: Date,
         required: true
     },
+    checkOutDate: {
+        type: Date,
+        required: true
+    },
+    status: {
+        type: String,
+        enum: ['confirmed', 'pending', 'cancelled'],
+        default: 'pending'
+    }
 })
 
 module.exports = mongoose.model('Reservation', reservationSchema);

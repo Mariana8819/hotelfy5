@@ -12,6 +12,16 @@ const userSchema = new Schema({
         required: true,
         unique: true
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    role: {
+        type: String,
+        enum: ['guest', 'admin'],
+        default: 'guest'
+    }
 })
 
 module.exports = mongoose.model('User', userSchema);
